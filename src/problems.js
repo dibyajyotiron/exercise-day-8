@@ -6,9 +6,15 @@
  * xprod([1, 2], ['a', 'b']); //=> [[1, 'a'], [1, 'b'], [2, 'a'], [2, 'b']]
  * xprod([a, b], [c, d]) = [[a, c], [a, d], [b, c], [b, d]]
  */
-
+/* eslint-disable */
 function xprod(arr1, arr2) {
-  return arr1 + arr2;
+  let x = [];
+  for(let i in arr1){
+    for(let j in arr2){
+        x[x.length] = [arr1[i],arr2[j]];
+    }
+  }
+  return x;
 }
 
 /**
@@ -19,6 +25,7 @@ function xprod(arr1, arr2) {
  */
 
 function without() {
+
 
 }
 
