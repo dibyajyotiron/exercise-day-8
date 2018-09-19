@@ -1,3 +1,4 @@
+/* eslint-disable */
 /** Q1.
  * Removes one level of nesting from
  * any chain.
@@ -77,7 +78,7 @@ function type() {
  */
 
 function toUpper1(params) {
-  return params;
+  return params.toUpperCase();
 }
 
 /** Q7.
@@ -266,8 +267,8 @@ function splitEvery(n, list) {
  *    slice(0, 3, 'ramda');                     //=> 'ram'
  */
 
-function slice(input) {
-  return input;
+function slice(s,e,input) {
+  return input.slice(s,e);
 }
 
 
@@ -294,6 +295,7 @@ Create an iterable using generator function.
 It should have the same functionality as the one in question 1
 */
 function* generatorIterable() {
+  let result = [1,2,3,4,5];
   yield 'abc';
 }
 
